@@ -7,11 +7,11 @@ Sailboat Search makes it easy for you to re-find things: be it a mail on Gmail, 
 PRIVACY: Sailboat Search works completely locally (No data is sent to me/google or anyone else) 
 
 Features:
-✓ See results from Browser History when you Google/DuckDuckGo
-✓ Completely Local (No data is sent to me/google or anyone else)
-✓ Archive Pages that you consider important (Just click the extension button)
-✓ Get full text search on these Archived Pages when you Google
-✓ Option to Automatically archive pages, on which you spend considerable time.
+1. See results from Browser History when you Google/DuckDuckGo
+2. Completely Local (No data is sent to me/google or anyone else)
+3. Archive Pages that you consider important (Just click the extension button)
+4. Get full text search on these Archived Pages when you Google
+5. Option to Automatically archive pages, on which you spend considerable time.
 
 For help after downloading the extension, just right click and go to options.
 
