@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Sailboat Search",
+  "description": "Get search results from history and archive when you Google or DuckDuckGo.",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_icon": "images/sailboat-search-black.png",
+    "default_title": "Sailboat Search"
+  },
+
+   "content_scripts": [
+       {
+           "matches": ["https://*/*"],
+           "js": [
+               "lib/jquery-3.2.1.min.js",
+               "util.js",
+               "contentscripts/timeme.min.js",
+               "contentscripts/archiveResults.js"
+           ],
+           "run_at": "document_end"
+       }
+   ],
+  "background": {
+    "scripts": [
+      "lib/jquery-3.2.1.min.js",
+      "util.js",
+      "lib/elasticlunr.js",
+      "Readability.js",
+      "background.js"
+    ]
+  },
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "web_accessible_resources": [
+    "images/logo_white_sails_no_text.png"
+  ],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "history",
+    "bookmarks"
+  ],
+
+  "icons": { "16": "images/Sailboat16.png",
+           "48": "images/Sailboat48.png",
+          "128": "images/Sailboat128.png"}
+}
