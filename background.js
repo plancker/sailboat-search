@@ -60,7 +60,7 @@ chrome.browserAction.onClicked.addListener(function(tab) { manage_archiving(tab)
 // When archive-me message received archive page.
 chrome.runtime.onMessage.addListener(function (request, sender) {
     if (request.type === "archive-me") {
-        manage_archiving(sender.tab)
+        archivePage(sender.tab)
     }
 });
 function manage_archiving(tab){
